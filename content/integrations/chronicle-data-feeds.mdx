@@ -1,40 +1,41 @@
 ---
-title: Chronicle Oracles
+title: Chronicle
 category: Oracles
 available: ["C-Chain"]
-description: Chronicle Oracles enable you to access verifiable data onchain.
+description: Chronicle is the data infrastructure layer for onchain capital markets.
 logo: /images/chronicle.png
-developer: Chronicle Labs
+developer: Chronicle
 website: https://chroniclelabs.org/
 documentation: https://docs.chroniclelabs.org/
 ---
 
 ## Overview
-[Chronicle Protocol](https://chroniclelabs.org/) is a novel Oracle solution that overcomes the current limitations of transferring data onchain by developing scalable, cost-efficient, decentralized, and verifiable Oracles.
-For the data feeds addresses, please check out the [Chronicle Dashboard](https://chroniclelabs.org/dashboard) under **Oracles** section. Select either **Mainnets** or **Testnets**, then **Avalanche C-Chain Oracles**.
+[Chronicle](https://chroniclelabs.org/) is the data infrastructure layer for onchain capital markets. Its oracle network makes financial data verifiable and usable onchain, enabling institutions and onchain operators to value tokenized assets, assess risk, and allocate capital.
+To browse live onchain data, use the [Chronicle Dashboard](https://chroniclelabs.org/dashboard). 
 
-### Data Feeds Types
-Chronicle provides two categories of Oracles: [DeFi Oracles](https://docs.chroniclelabs.org/Products/DeFiOracle/) and [Verified Asset Oracles (VAO)](https://docs.chroniclelabs.org/Products/DeFiOracle/).
+### Oracle Types
+Chronicle provides:
+- [Data Feeds](https://chroniclelabs.org/dashboard/data-feeds): high-integrity price data for onchain markets.
+- [Proof of Asset](https://chroniclelabs.org/dashboard/proof-of-asset): the data infrastructure layer for tokenized assets.
 
-DeFi Oracles include:
-- Cryptocurrency Oracles
-- Fiat Currency Oracles
-- Yield Rate Oracles
+## Data Feeds
+Chronicle Data Feeds provide high-integrity price data for onchain markets. Each feed uses defined data sources and transparent methodologies, with visibility into how prices are sourced, calculated, and delivered onchain.
 
-[The Verified Asset Oracle (VAO)](https://docs.chroniclelabs.org/Products/VerifiedAssetOracle/) — formerly known as the RWA Oracle — securely and transparently verifies the integrity and quality of any offchain asset, transports the resulting data onchain, and makes it directly available to smart contracts and onchain products.
+## Proof of Asset
+Proof of Asset is the data infrastructure layer for tokenized assets. Chronicle’s oracle network sources and reconciles data from custodians, fund administrators, transfer agents, and onchain issuance records to deliver verified asset data onchain. This enables institutions and onchain operators to value tokenized assets, assess risk, and allocate capital.
 
-### Check the Chronicle Oracles on the Chronicle Dashboard
+### Check the Chronicle onchain data on the Chronicle Dashboard
 
 - [Avalanche C-Chain Oracles](https://chroniclelabs.org/dashboard/oracles#blockchain=AVAX)
 - [Avalanche Fuji Testnet Oracles](https://chroniclelabs.org/dashboard/oracles#testnet=true&blockchain=FUJI)
 
-## Using Chronicle DeFi Oracles on Avalanche Fuji Testnet
+## Using Chronicle Data Feeds on Avalanche Fuji Testnet
 
 The following example showcases how to integrate the AVAX/USD oracle on Avalanche Fuji Testnet.
 
 Chronicle contracts are read-protected by a whitelist, meaning you won't be able to read them onchain without your address being added to the whitelist. 
 On the Testnet networks, users can add themselves to the whitelist through the SelfKisser contract; a process playfully referred to as "kissing" themselves. 
-**To get access to production Oracles on the Mainnet, please open a support ticket in [Discord](https://discord.com/invite/CjgvJ9EspJ) in the 🆘 ｜ support channel.**
+### To get access to production Oracles on the Mainnet, fill out the [following form](https://form.typeform.com/to/LwlHi234).
 
 For oracle addresses, please check out the [Dashboard](https://chroniclelabs.org/dashboard/oracles).
 
